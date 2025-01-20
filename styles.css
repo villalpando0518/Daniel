@@ -1,0 +1,243 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --cyan: #01BAEF;
+  --snow: #FFFAFB;
+  --black: #292929;
+  --eng_violet: #3E3545;
+  --gray: #999999;
+}
+
+* {
+    scroll-behavior: smooth;
+    white-space: non-wrap;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+}
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 20px;
+    height: 10vh;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: var(--black);
+
+}
+a {
+    text-decoration: none;
+    color: #01BAEF;
+    line-height: 1;
+}
+a:hover {
+    color: #FFFAFB;
+}
+body {
+    margin : 0;
+    color: #FFFAFB;/*snow*/
+    background-color: black;
+}
+
+p {
+  white-space: nowrap;
+  font-family: Quicksand;
+  color: var(--gray);
+
+
+}
+#inicio {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 10vh;
+    background-color: #292929;
+    color: #FFFAFB;//snow
+}
+#nombre{
+    margin-top: 0;
+    font-family: Pattaya;
+    font-size: 70px;
+}
+#ocupacion{
+    color: var(--gray);
+    font-family: Quicksand;
+    font-size: 30px;
+}
+#inicio .foto{
+    text-align: center;
+    flex: 5;
+
+}
+#yo{
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+#inicio .texto{
+    flex: 7;
+    min-width: 600px;
+    padding: 20px;
+    padding-left: 40px;
+
+}
+
+#correo_boton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.icono:hover path{
+    stroke: #01BAEF;
+}
+
+.icono_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    flex-flow: center;
+}
+.parrafo p{
+    margin: 2px;
+}
+button {
+  background: var(--cyan);
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Inter,Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+/****************************************************/
+#trabajos {
+
+    background-color: #3E3545;/*Eng violet*/
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 7vw;
+    padding-bottom: 7vh;
+}
+#tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.tarjeta img{
+    width: 300px;
+    height: auto;
+
+}
+#tarjetas .boton{
+    text-align: center;
+}
+
+#t1{
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 0 0 3px var(--gray);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+    box-shadow: 0 0 0 3px var(--gray);
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 40em;
+}
+#t2 img{
+    width: 400px;
+    height: auto;
+}
+#tarjetas * .centrar_vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+#t3 img{
+    width: 380px;
+    height: auto;
+}
+/******************************************************/
+#cv{
+    background-color: var(--black);
+    min-height: 100vh;
+}
+section{
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 7vw;
+    padding-bottom: 7vh;
+}
+/********************************************************/
+#contacto {
+    text-align: center;
+    background-color: var(--eng_violet);
+    color: var(--snow);
+    min-height: 100vh;
+}
+
+#icono_github path{
+    stroke: #01BAEF ;
+}
+/*********************************************************/
+
+.pattaya-regular {
+  font-family: "Pattaya", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+    margin: 0;
+    font-size: 50px;
+    font-family: "Quicksand";
+    color: var(--snow);
+}
