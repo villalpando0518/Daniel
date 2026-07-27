@@ -16,7 +16,6 @@ html {
 
 * {
     scroll-behavior: smooth;
-    white-space: non-wrap;
 }
 
 header {
@@ -25,15 +24,14 @@ header {
 }
 #menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
     font-family: Quicksand;
     font-weight: bold;
     font-size: 20px;
     height: 10vh;
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
     background-color: var(--black);
 
 }
@@ -52,11 +50,10 @@ body {
 }
 
 p {
-  white-space: nowrap;
   font-family: Quicksand;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   color: var(--gray);
-
-
 }
 #inicio {
     display: flex;
@@ -65,7 +62,7 @@ p {
     min-height: 100vh;
     padding-top: 10vh;
     background-color: #292929;
-    color: #FFFAFB;//snow
+    color: #FFFAFB;/*snow*/
 }
 #nombre{
     margin-top: 0;
@@ -97,9 +94,10 @@ p {
 
 #correo_boton{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    padding-right: 150px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .icono:hover path{
@@ -118,7 +116,7 @@ p {
     flex-flow: center;
 }
 .parrafo p{
-    margin: 2px;
+    margin: 6px 0;
 }
 button {
   background: var(--cyan);
@@ -139,6 +137,7 @@ button {
   width: fit-content;
   word-break: break-word;
   border: 0;
+  margin-top: 16px;
 }
 /****************************************************/
 #trabajos {
@@ -158,7 +157,8 @@ button {
     gap: 25px;
 }
 .tarjeta img{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
 
 }
@@ -181,7 +181,6 @@ button {
     box-shadow: 0 0 0 3px var(--gray);
     border-radius: 20px;
     padding: 20px;
-    min-width: 40em;
 }
 #t2 img{
     width: 400px;
